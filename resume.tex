@@ -1,0 +1,136 @@
+%-----------------------------------------
+% Flavius Anton
+% Resumé
+%
+% URL: http://github.com/flaviusanton/resume
+% This document is covered under the Creative Commons Attribution 3.0 Unported License
+%-----------------------------------------
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt,letterpaper,final]{moderncv}
+\ifx\HCode\UnDef\else\hypersetup{tex4ht}\fi
+\usepackage{fontspec}
+\moderncvtheme[blue]{classic}
+
+% DOCUMENT LAYOUT
+\usepackage[scale=0.85,top=1cm,bottom=0.5cm]{geometry}
+% \usepackage[scale=0.85]{geometry}
+\setlength{\hintscolumnwidth}{2cm}
+\AtBeginDocument{\recomputelengths}
+% FONTS
+\usepackage[utf8]{inputenc}
+\defaultfontfeatures{Mapping=tex-text} % converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
+
+% Remove % to set to different fonts
+%\setromanfont [Ligatures={Common},Numbers={OldStyle}]{Adobe Caslon Pro}
+%\setmonofont[Scale=0.8]{Monaco} 
+
+% ---- CUSTOM AMPERSAND
+\newcommand{\amper}{{\fontspec[Scale=.95]{Adobe Caslon Pro}\selectfont\itshape\&}}
+
+% ---- MARGIN YEARS
+%\newcommand{\years}[1]{\marginpar{\scriptsize #1}}
+
+
+% PDF SETUP
+% ---- FILL IN HERE THE DOC TITLE AND AUTHOR
+
+
+% Personal Information 
+\firstname{Flavius V.}
+\familyname{Anton}
+\address{290 Spl. Independentei}{Bucharest, Romania 060029}
+\mobile{(+40) 745 758 953}
+\email{f.v.anton@gmail.com}
+%\homepage{www.derefnull.com/about}
+
+\title{Flavius Anton's Resume}
+
+\nopagenumbers{}
+
+\begin{document}
+
+\maketitle
+\vspace*{-7mm}
+
+\section{Computer Skills}
+  \cvline{Languages:}{C, C++, Java, Python, Scala, Shell scripting (Bash)}
+  \cvline{Tools:}{Git, MySQL, Django Framework, Apache Kafka}
+
+\section{Education}
+\cventry{2015 - present}{Master's Degree}{Complex Computer Networks Security}{University
+Politehnica of Bucharest}{}{}{}
+\cventry{2011 - 2015}{Bachelor's Degree}{Automatic Control \& Computer
+Science}{University
+Politehnica of Bucharest}{Overall GPA: 3.68}{}{}
+
+\section{Experience}
+  \cventry{May 2015 -- August 2015}{Software Engineering Intern}{Google}{Mountain View, CA}{}{
+    \begin{itemize}
+      \item Added first class support for protocol buffers in MySQL 5.7.
+      \item Introduced a new MySQL native type, PROTOBUF.
+      \item Added support for queries like INSERT, SELECT, UPDATE etc on PROTOBUF
+      fields.
+    \end{itemize}
+  }
+
+  \cventry{October 2014 -- present}{Teaching Assistant}{University
+  Politehnica}{Bucharest}{Introduction to Operating Systems}{}
+
+  \cventry{July 2014 -- October 2014}{Site Reliability Engineer
+  Intern}{Google}{London, UK}{}{
+    \begin{itemize}
+      \item Worked for Google Compute Engine SRE Team.
+      \item Designed and wrote a console that helped Technical Support
+      Engineers with monitoring customer GCE projects, using Python and
+      Django Framework.
+    \end{itemize}
+  }
+
+  \cventry{June 2013 -- September 2013}{Software Developer Intern}{Adobe
+  Systems}{Bucharest, Romania}{}{
+    \begin{itemize}
+      \item Worked for Adobe Pass, entitlement solution for TV Everywhere.
+      \item Wrote a Tomcat Session Manager which handled user sessions across
+      multiple Tomcat nodes and a single common database (Couchbase).
+      \item Developed a custom iOS User Interface Automation Framework based
+      on KIF Framework.
+    \end{itemize}
+  }
+
+  \cventry{March 2013 -- October 2014}{Instructor}{lpic.ro}{Bucharest,
+  Romania}{Linux Essentials \& LPIC 101}{
+    \begin{itemize}
+      \item Introducing new people to the world of Linux and Open Source.
+    \end{itemize}
+  }
+
+\section{Individual Projects}
+  \cventry{}{Logo Detection System}{}{}{Scala}{
+    \begin{itemize}
+      \item Designed and implemented a distributed, pipelined architecture for
+      analyzing images fetched from social networks, with the purpose of
+      recognizing logos and building statistics upon them.
+    \end{itemize}
+  }
+
+  \cventry{}{LCPL Compiler}{}{}{Java}{
+    \begin{itemize}
+      \item Wrote a compiler for an academic programming language called LCPL.
+    \end{itemize}
+  }
+
+  \cventry{}{Mini Linux Shell}{}{}{C}{
+    \begin{itemize}
+      \item Wrote a minimalistic shell, very similar to Bash, that can run on
+      Linux.
+    \end{itemize}
+  }
+
+\section{Links}
+  \cvlistitem{GitHub: \url{http://github.com/flaviusanton}}
+  \cvlistitem{LinkedIn: \url{http://linkedin.com/in/fvanton}}
+  \cvlistitem{Facebook: \url{http://facebook.com/fvanton}}
+\end{document}
